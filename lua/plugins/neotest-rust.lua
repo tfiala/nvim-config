@@ -1,7 +1,13 @@
 return {
-  { "rouge8/neotest-rust" },
   {
     "nvim-neotest/neotest",
-    opts = { adapters = { "neotest-rust" } },
+    dependencies = {
+      "rouge8/neotest-rust",
+    },
+    opts = {
+      adapters = {
+        ["neotest-rust"] = {},
+      },
+    },
   },
 }

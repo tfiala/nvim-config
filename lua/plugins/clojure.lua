@@ -12,14 +12,6 @@ local lisp_dialects = { "clojure", "fennel" }
 
 ---@type LazySpec
 return {
-  -- ts-comments for proper Clojure comment handling
-  {
-    "folke/ts-comments.nvim",
-    opts = {},
-    event = "VeryLazy",
-    enabled = vim.fn.has("nvim-0.10.0") == 1,
-  },
-
   -- Structural Editing with Parinfer
   {
     "gpanders/nvim-parinfer",
